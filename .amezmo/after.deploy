@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+# Ensure our script fails if the apply command returns non-zero (failure exit code)
+set -e;
+
+# Execute our script
+./craft project-config/apply;
