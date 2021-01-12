@@ -2,15 +2,28 @@
 
 set -e;
 
+# -----------------------------------------------------------------------------------
+# APPLICATION_ROOT is the release directory that's created by Amezmo. This variable
+# is automatically set
+#
+# https://www.amezmo.com/docs/deployments/directories
 DEPLOYMENT_STORAGE_DIRECTORY="$APPLICATION_ROOT/storage";
+
+# -----------------------------------------------------------------------------------
+# Amezmo creates a directory for persistant data such as uploads, images, and other
+# files that should be available between deployments
+#
+#
+# https://www.amezmo.com/docs/configuration/storage
 
 PERSISTENT_STORAGE_DIRECTORY="/webroot/storage";
 
 # If this directory does not exist, proceed with the linking
-if [ ! -f "$DEPLOYMENT_STORAGE_DIRECTORY" ]; then
+if [ ! -d "$DEPLOYMENT_STORAGE_DIRECTORY" ]; then
 	echo "Linking $DEPLOYMENT_STORAGE_DIRECTORY to $PERSISTENT_STORAGE_DIRECTORY";
 	ln --symbolic --force --no-dereference $PERSISTENT_STORAGE_DIRECTORY "$DEPLOYMENT_STORAGE_DIRECTORY";
 	echo "Done";
 else
-	echo "Not linking $DEPLOYMENT_STORAGE_DIRECTORY because it already exists. If you need to override this, please be sure to remove this directory from Git by adding it to your .gitignore";
+	echo "Not linking $DEPLOYMENT_STORAGE_DIRECTORY because it already exists. "
+	echo "If you need to override this, please be sure to remove this directory from Git by adding it to your .gitignore";
 fi
