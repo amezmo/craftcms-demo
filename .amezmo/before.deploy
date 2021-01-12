@@ -2,8 +2,6 @@
 
 set -e;
 
-APPLICATION_ROOT=/home/ubuntu;
-
 DEPLOYMENT_STORAGE_DIRECTORY="$APPLICATION_ROOT/storage";
 
 PERSISTENT_STORAGE_DIRECTORY="/webroot/storage";
