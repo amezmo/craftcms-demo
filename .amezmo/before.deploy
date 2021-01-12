@@ -6,7 +6,7 @@
 # APPLICATION_ROOT is the release directory that's created by Amezmo. This variable
 # is automatically set
 #
-# @see https://www.amezmo.com/docs/deployments/directories
+# https://www.amezmo.com/docs/deployments/directories
 # -----------------------------------------------------------------------------------
 ​DEPLOYMENT_STORAGE_DIRECTORY="$APPLICATION_ROOT/storage";
 ​
@@ -16,7 +16,7 @@
 # files that should be available between deployments
 #
 #
-# @see https://www.amezmo.com/docs/configuration/storage
+# https://www.amezmo.com/docs/configuration/storage
 # -----------------------------------------------------------------------------------
 
 PERSISTENT_STORAGE_DIRECTORY="/webroot/storage";
