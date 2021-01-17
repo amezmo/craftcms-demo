@@ -4,7 +4,7 @@
 This repository contains a starter template for deploying and hosting CraftCMS applications on [Amezmo](https://www.amezmo.com/register).
 
 ## Features
-- Persistant storage
+- Persistent storage
 - `.env` driven database configuration
 - Amezmo [deployment hook](https://www.amezmo.com/docs/deployments/hooks) examples
 
