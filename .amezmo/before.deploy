@@ -10,7 +10,7 @@ set -e;
 DEPLOYMENT_STORAGE_DIRECTORY="$APPLICATION_ROOT/storage";
 
 # -----------------------------------------------------------------------------------
-# Amezmo creates a directory for persistant data such as uploads, images, and other
+# Amezmo creates a directory for persistent data such as uploads, images, and other
 # files that should be available between deployments
 #
 #
