@@ -16,6 +16,7 @@ DEPLOYMENT_STORAGE_DIRECTORY="$APPLICATION_ROOT/storage";
 #
 # https://www.amezmo.com/docs/configuration/storage
 
+# Important: This is for the Production environment, for Staging, please see https://www.amezmo.com/docs/configuration/storage
 PERSISTENT_STORAGE_DIRECTORY="/webroot/storage";
 
 # If this directory does not exist, proceed with the linking
