@@ -27,4 +27,5 @@ if [ ! -d "$DEPLOYMENT_STORAGE_DIRECTORY" ]; then
 else
 	echo "Not linking $DEPLOYMENT_STORAGE_DIRECTORY because it already exists. "
 	echo "If you need to override this, please be sure to remove this directory from Git by adding it to your .gitignore";
+	exit 1;
 fi
